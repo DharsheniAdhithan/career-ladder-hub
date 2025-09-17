@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ✅ Navbar -->
+    <div class="navbar">
+        <h2>Career Ladder Hub 🚀</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="jobs.html">Jobs</a>
+            
+            <a href="admin_login.html">Admin</a>
+        </div>
+    </div>
+
+    <!-- ✅ Existing content -->
+    <div class="container">
+        <h1 class="title">Admin Panel</h1>
+
+        <!-- Post Job Section -->
+        <div class="card">
+            <h2>Post New Job</h2>
+            <input type="text" id="job-title" placeholder="Job Title">
+            <input type="text" id="job-loc" placeholder="Location">
+            <textarea id="job-desc" placeholder="Job Description"></textarea>
+            <button type="button" onclick="postJob()">Post Job</button>
+        </div>
+
+        <!-- View Applicants Section -->
+        <div class="card">
+            <h2>View Applicants</h2>
+            <input type="number" id="job-id" placeholder="Enter Job ID">
+            <button type="button" onclick="viewApplicants()">View Applicants</button>
+            
+            <table id="applicants-table" border="1" style="width:100%; margin-top:10px; color:black;">
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="applicantsTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About</a> &nbsp; | &nbsp; 
+            © 2025 Career Ladder Hub 🚀
+        </p>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
