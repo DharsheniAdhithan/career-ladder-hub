@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ✅ Navbar -->
+    <div class="navbar">
+        <h2>Career Ladder Hub 🚀</h2>
+
+        <!-- Hamburger (only visible on mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="admin_login.html">Admin</a>
+        </div>
+    </div>
+
+    <!-- ✅ Existing content -->
+    <div class="container">
+        <h1 class="title">Job Portal - Register</h1>
+        <div class="card">
+            <input type="text" id="reg-username" placeholder="Username">
+            <input type="email" id="reg-email" placeholder="Email">
+            <input type="password" id="reg-password" placeholder="Password">
+            <button onclick="registerUser()">Register</button>
+        </div>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+        <p>Admin? <a href="admin_login.html">Login here</a></p>
+    </div>
+
+    <!-- ✅ Footer -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About</a> &nbsp; | &nbsp; 
+            © 2025 Career Ladder Hub 🚀
+        </p>
+    </div>
+
+    <!-- ✅ Toggle Menu Script -->
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("show");
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
