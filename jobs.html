@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Jobs - Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ✅ Navbar -->
+    <div class="navbar">
+        <h2>Career Ladder Hub 🚀</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="login.html">Login</a>
+            <a href="admin_login.html">Admin</a>
+        </div>
+    </div>
+
+    <!-- ✅ Main Content -->
+    <div class="container">
+        <h1 class="title">Available Jobs</h1>
+        <button onclick="getJobs()">Refresh Jobs</button>
+
+        <!-- Container to display jobs -->
+        <div id="job-list"></div>
+
+        <p><a href="login.html">Back to Login</a></p>
+    </div>
+
+    <!-- ✅ Footer -->
+    <div class="footer">
+        <p>
+            <a href="about.html">About</a> &nbsp; | &nbsp; 
+            © 2025 Career Ladder Hub 🚀
+        </p>
+    </div>
+
+    <!-- ✅ Reminder Popup -->
+    <div id="reminderBox" class="popup">
+      <div class="popup-content">
+        <h3>ℹ️ Reminder</h3>
+        <p>Click the Apply button to submit your application for Info.</p>
+        <button onclick="closeReminder()">OK</button>
+      </div>
+    </div>
+
+    <!-- ✅ Success Popup -->
+    <div id="successBox" class="popup">
+      <div class="popup-content">
+        <h3>✅ Job Applied Successfully!</h3>
+        <p>Your application has been submitted.</p>
+        <button onclick="closeSuccess()">OK</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
